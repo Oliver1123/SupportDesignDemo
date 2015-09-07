@@ -25,7 +25,7 @@
         android:layout_above="@+id/tvProfileEmail"
         android:layout_marginTop="@dimen/menu_header_text_margin_top"
         android:singleLine="true"
-        android:text="My Girl"
+        android:text="Super Girl"
         android:textColor="@android:color/white"
         android:textStyle="bold"/>
 
