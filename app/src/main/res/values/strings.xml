@@ -21,4 +21,7 @@
 
     <string name="button_check">Check</string>
     <string name="input_helper_text">Field is required</string>
+    <string name="tab1">Tab 1</string>
+    <string name="tab2">Second tab</string>
+    <string name="tab4">Tab 4</string>
 </resources>
