@@ -74,12 +74,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 @Override
                 public void onTabUnselected(TabLayout.Tab _tab) {
-
+                    //do nothing
                 }
 
                 @Override
                 public void onTabReselected(TabLayout.Tab _tab) {
-
+                    // do nothing
                 }
             });
         }
