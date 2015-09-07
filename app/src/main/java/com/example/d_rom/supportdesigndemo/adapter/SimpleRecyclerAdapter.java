@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.d_rom.supportdesigndemo.R;
 
@@ -38,7 +39,7 @@ public class SimpleRecyclerAdapter  extends RecyclerView.Adapter<SimpleRecyclerA
         return mData == null ? 0 : mData.size();
     }
 
-    class SimpleViewHolder extends RecyclerView.ViewHolder {
+    class SimpleViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public ImageView mIconView;
         public TextView mTitleView;
 
@@ -46,12 +47,18 @@ public class SimpleRecyclerAdapter  extends RecyclerView.Adapter<SimpleRecyclerA
             super(_view);
             mIconView = (ImageView)_view.findViewById(R.id.icon);
             mTitleView = (TextView)_view.findViewById(R.id.text);
+            _view.setOnClickListener(this);
         }
 
         public void onBind() {
             final int position = getAdapterPosition();
 //            mIconView
             mTitleView.setText(mData.get(position));
+        }
+
+        @Override
+        public void onClick(View v) {
+            Toast.makeText(mContext, "Item " + getAdapterPosition() + " selected", Toast.LENGTH_SHORT).show();
         }
     }
 }
