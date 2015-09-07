@@ -52,7 +52,7 @@ public class SimpleRecyclerAdapter  extends RecyclerView.Adapter<SimpleRecyclerA
 
         public void onBind() {
             final int position = getAdapterPosition();
-//            mIconView
+//            mIconView.setImageResource(R.mipmap.ic_launcher);
             mTitleView.setText(mData.get(position));
         }
 
