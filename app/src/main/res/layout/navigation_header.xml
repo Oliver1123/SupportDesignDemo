@@ -8,7 +8,7 @@
 
     <com.github.siyamed.shapeimageview.CircularImageView
         android:layout_marginTop="@dimen/menu_header_top_extra_padding"
-        android:id="@+id/ivLogo"
+        android:id="@+id/ivPicture"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:siBorderWidth="1dp"
