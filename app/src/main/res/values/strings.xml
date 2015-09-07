@@ -24,4 +24,7 @@
     <string name="tab1">Tab 1</string>
     <string name="tab2">Second tab</string>
     <string name="tab4">Tab 4</string>
+    <string name="title_activity_3">Activity3</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
